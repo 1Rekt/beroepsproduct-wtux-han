@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/custom.css" rel="stylesheet">
+        <title>Gelre Airport - Home</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="container">
+                    <ul>
+                        <li><a href="index.html" class="active">Gelre Airport!</a></li>
+                        <li><a href="passagier/index.html">Passagier</a></li>
+                        <li><a href="medewerker/index.html">Medewerker</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="page-header">
+                <div class="container">
+                    <h1>Welkom bij Gelre Airport</h1>
+                </div>
+            </section>
+            <section class="login">
+                <div class="container">
+                    <div class="card">
+                        <div class="options">
+                            <h2>Login</h2>
+                            <a href="medewerker/index.html">Medewerker</a>
+                            <a href="passagier/index.html">Passagier</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="search-section">
+                <div class="container">
+                    <div class="search-form">
+                        <h2>Zoeken naar vlucht</h2>
+                        <form method="GET" action="overzicht.html">
+                            <div class="form-item">
+                                <label for="vluchtnummer">Vluchtnummer:</label>
+                                <input type="text" name="vluchtnummer" id="vluchtnummer" placeholder="..." required>
+                            </div>
+                            <button type="submit" class="btn btn-green">Zoeken</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                <ul>
+                    <li>Jurre de Klijn @ HAN</li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>

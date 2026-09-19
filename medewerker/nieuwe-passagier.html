@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../css/style.css" rel="stylesheet">
+        <link href="../css/custom.css" rel="stylesheet">
+        <title>Gelre Airport - Nieuwe passagier</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="container">
+                    <ul>
+                        <li><a href="../index.html">Gelre Airport!</a></li>
+                        <li><a href="../passagier/index.html">Passagier</a></li>
+                        <li><a href="index.html">Medewerker</a></li>
+                        <li><a href="nieuwe-vlucht.html">Nieuwe vlucht</a></li>
+                        <li><a href="nieuwe-passagier.html"  class="active">Nieuwe passagier</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="page-header">
+                <div class="container">
+                    <h1>Nieuwe passagier</h1>
+                </div>
+            </section>
+
+            <div class="create-form">
+                <div class="container">
+                    <form method="GET" action="nieuwe-passagier.html"><!-- hier hoort eigenlijk POST maar dat geeft 405 zonder php -->
+                        <div class="form-item">
+                            <label for="vlucht">Vlucht:</label>
+                            <select name="vlucht" id="vlucht">
+                                <option>1433ZZ</option>
+                                <option>6456IU</option>
+                                <option>9034FC</option>
+                            </select>
+                        </div>
+
+                        <div class="form-item">
+                            <label for="naam">Naam:</label>
+                            <input type="text" name="naam" id="naam">
+                        </div>
+
+                        <div class="form-item">
+                            <label for="geslacht">Geslacht:</label>
+                            <input type="text" name="geslacht" id="geslacht">
+                        </div>
+
+                        <div class="form-item">
+                            <label for="stoel">Stoel:</label>
+                            <input type="text" name="stoel" id="stoel">
+                        </div>
+
+                        <button class="btn btn-green" type="submit">Aanmaken</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="container">
+                <ul>
+                    <li>Jurre de Klijn @ HAN</li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>
